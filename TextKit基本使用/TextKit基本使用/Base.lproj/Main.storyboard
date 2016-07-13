@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextKit基本使用" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="544" translatesAutoresizingMaskIntoConstraints="NO" id="Wxp-BQ-lZp" customClass="MCLabel" customModule="TextKit基本使用" customModuleProvider="target">
+                                <rect key="frame" x="28" y="28" width="544" height="137"/>
+                                <color key="backgroundColor" red="0.88423477564102559" green="0.88423477564102559" blue="0.88423477564102559" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OPz-iY-nuK" customClass="MCTextView" customModule="TextKit基本使用" customModuleProvider="target">
+                                <rect key="frame" x="28" y="190" width="544" height="257"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OPz-iY-nuK" firstAttribute="leading" secondItem="Wxp-BQ-lZp" secondAttribute="leading" id="6im-Id-24V"/>
+                            <constraint firstItem="OPz-iY-nuK" firstAttribute="trailing" secondItem="Wxp-BQ-lZp" secondAttribute="trailing" id="7w9-ot-zSg"/>
+                            <constraint firstItem="OPz-iY-nuK" firstAttribute="top" secondItem="Wxp-BQ-lZp" secondAttribute="bottom" constant="25" id="824-Kk-qEb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OPz-iY-nuK" secondAttribute="bottom" constant="153" id="AMu-qd-sne"/>
+                            <constraint firstItem="Wxp-BQ-lZp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="LPb-Ji-qIe"/>
+                            <constraint firstItem="Wxp-BQ-lZp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dbt-30-Qns"/>
+                            <constraint firstItem="Wxp-BQ-lZp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="hqP-zb-w58"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wxp-BQ-lZp" secondAttribute="bottom" constant="435" id="lip-hh-VlN"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="Wxp-BQ-lZp" id="zgt-D4-SSt"/>
+                        <outlet property="customTextView" destination="OPz-iY-nuK" id="2r0-CA-7hl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="310"/>
+        </scene>
+    </scenes>
+</document>
